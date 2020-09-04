@@ -33,7 +33,7 @@ protect_from_forgery :except => [:destroy]
    flash[:notice] = "Book was successfully updated."
    redirect_to book_path(@book)
    else
-   render edit
+   render "edit"
    end
  end
 
